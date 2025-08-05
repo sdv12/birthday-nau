@@ -1,0 +1,33 @@
+.carouselContainer {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #fef5e7;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3e2d20;
+}
+
+.noImages {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.swiper {
+  padding-bottom: 0.5rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}

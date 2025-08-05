@@ -1,0 +1,85 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor del checkbox */
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Ocultamos el checkbox real */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+/* Estilo del cuadrado personalizado */
+.customCheckbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Agrega animación de check */
+.checkbox:checked + .customCheckbox {
+  background-color: #fdf1e7;
+  transform: scale(1.1);
+}
+
+.checkbox:checked + .customCheckbox::after {
+  content: '✔';
+  color: #0e123d;
+  font-size: 16px;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* Texto al lado */
+.labelText {
+  user-select: none;
+}
+
+/* Mensaje de confirmación */
+.confirmation {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

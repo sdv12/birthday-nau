@@ -1,0 +1,9 @@
+:root {
+  background-color: #fde4bf;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box; /* Evita que los paddings afecten las dimensiones */
+}
