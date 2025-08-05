@@ -7,12 +7,11 @@ export const userPhotoConfig = {
     lucas: {
     path: 'individual/lucas',
   },
-    Daniela: {
-
-    path: 'individual/Daniela',
+    daniela: {
+    path: 'individual/daniela',
   },
-  Nahuel: {
-    path: 'individual/Nahuel',
+  nahuel: {
+    path: 'individual/nahuel',
   },
 
   /* UTN */

@@ -27,9 +27,11 @@ function App() {
         {userName && (
     <>
       <div className='upperHalf halfScreen'>
-          <div className='elegantHeader'>
-    ¡Hola {userName}!, estás invitado al cumpleaños de Nahuel 🎉
-  </div>
+<div className='elegantHeader'>
+  {userName.toLowerCase() === 'nahuel'
+    ? 'Cuervo trolo 🎂 Esta app es para vos ❤️'
+    : `¡Hola ${userName}!, estás invitado al cumpleaños de Nahuel 🎉`}
+</div>
         <FirstData />
         <Carrousel userName={userName} />
         
