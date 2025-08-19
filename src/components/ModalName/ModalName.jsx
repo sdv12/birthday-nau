@@ -1,14 +1,15 @@
-import { useEffect ,useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './ModalName.module.css';
+import { userPhotoConfig } from '../../data/userPhotoConfig';
 
-const ALLOWED_NAMES = ['Sergio', 'Lucas', 'Daniela', 'Nahuel']; // modificala como quieras
+const ALLOWED_NAMES = Object.keys(userPhotoConfig); // ← usa las keys directamente
 
 const ModalName = ({ onAccessGranted }) => {
   const [name, setName] = useState('');
   const [isAllowed, setIsAllowed] = useState(null);
   const [showModal, setShowModal] = useState(true);
 
-    useEffect(() => {
+  useEffect(() => {
     const storedName = localStorage.getItem('guestName');
     if (storedName && isNameAllowed(storedName)) {
       onAccessGranted(storedName);
@@ -16,20 +17,16 @@ const ModalName = ({ onAccessGranted }) => {
     }
   }, []);
 
-    function isNameAllowed(inputName) {
-    return ALLOWED_NAMES.some(
-      (n) => n.toLowerCase() === inputName.trim().toLowerCase()
-    );
+  function isNameAllowed(inputName) {
+    return ALLOWED_NAMES.includes(inputName.trim().toLowerCase());
   }
 
-    const handleSubmit = () => {
-    if (isNameAllowed(name)) {
-      const matchedName = ALLOWED_NAMES.find(
-        (n) => n.toLowerCase() === name.trim().toLowerCase()
-      );
+  const handleSubmit = () => {
+    const normalized = name.trim().toLowerCase();
 
-      localStorage.setItem('guestName', matchedName);
-      onAccessGranted(matchedName);
+    if (isNameAllowed(normalized)) {
+      localStorage.setItem('guestName', normalized);
+      onAccessGranted(normalized); // ← siempre pasamos la key en minúscula
       setIsAllowed(true);
       setShowModal(false);
     } else {
@@ -38,6 +35,7 @@ const ModalName = ({ onAccessGranted }) => {
   };
 
   if (!showModal) return null;
+
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>
@@ -49,7 +47,7 @@ const ModalName = ({ onAccessGranted }) => {
           value={name}
           onChange={(e) => {
             setName(e.target.value);
-            setIsAllowed(null); // resetear validación previa
+            setIsAllowed(null);
           }}
         />
         <button onClick={handleSubmit}>Entrar</button>
@@ -60,6 +58,6 @@ const ModalName = ({ onAccessGranted }) => {
       </div>
     </div>
   );
-}
+};
 
-export default ModalName
+export default ModalName;

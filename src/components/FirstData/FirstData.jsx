@@ -5,7 +5,7 @@ const FirstData = () => {
   return (
     <>
     <div className={styles.Title}>CUMPLE DEL NAU</div>
-    <div className={styles.When}>29 de Agosto, 21hs</div>
+    <div className={styles.When}>28 de Agosto, 21hs</div>
     </>
 
   )

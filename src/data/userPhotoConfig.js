@@ -16,46 +16,126 @@ export const userPhotoConfig = {
 
   /* UTN */
 
-  Bucha: {
-    group: 'UTN',
+  bucha: {
     path: 'groups/UTN',
   },
-  Sala: {
-    group: 'UTN',
+  sala: {
     path: 'groups/UTN',
   },
-    Zapata: {
-    group: 'UTN',
+    zapata: {
     path: 'groups/UTN',
   },
   /* Familia */
-      Marce: {
+      marcela: {
+    path: 'groups/Familia',
+  },
+        abel: {
     group: 'Familia',
     path: 'groups/Familia',
   },
-        Abel: {
+          matias: {
     group: 'Familia',
     path: 'groups/Familia',
   },
-          Matias: {
+            alejandra: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            gustavo: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            rocio: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            javier: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            maylen: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            tobias: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            brenda: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            daniel: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            debora: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            maximiliano: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            enriqueta: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            quique: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            gabriel: {
+    group: 'Familia',
+    path: 'groups/Familia',
+  },
+            rosario: {
     group: 'Familia',
     path: 'groups/Familia',
   },
 
   /* Default */
-            Zara: {
+            zara: {
     group: 'Default',
     path: 'groups/Default',
   },
-              Franco: {
+              mailen: {
     group: 'Default',
     path: 'groups/Default',
   },
-              Gonzalo: {
+              franco: {
     group: 'Default',
     path: 'groups/Default',
   },
-              Jimena: {
+                azul: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+              gonzalo: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+              jimena: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+                aylen: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+                ro: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+                dani: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+                mica: {
+    group: 'Default',
+    path: 'groups/Default',
+  },
+                guada: {
     group: 'Default',
     path: 'groups/Default',
   },

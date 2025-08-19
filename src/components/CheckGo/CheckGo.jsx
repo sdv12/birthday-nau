@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import styles from './CheckGo.module.css'
+import ModalCheck from '../ModalCheck/ModalCheck';
 
 const CheckGo = () => {
     const [isGoing, setIsGoing] = useState(false);
@@ -23,9 +24,9 @@ const CheckGo = () => {
         <span className={styles.labelText}>Sí, voy a ir</span>
       </label>
 
-      {isGoing && (
-        <p className={styles.confirmation}>¡Nos vemos ahí!</p>
-      )}
+        {isGoing && (
+  <ModalCheck isOpen={isGoing} onClose={() => setIsGoing(false)} />
+)}
     </div>
   )
 }

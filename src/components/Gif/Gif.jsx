@@ -2,21 +2,23 @@ import React from 'react';
 import styles from './Gif.module.css';
 
 const gifts = [
-  { icon: '🟦', title: 'Camiseta de San Lorenzo' },
-  { icon: '🎟️', title: 'Entradas para un partido' },
-  { icon: '🍽️', title: 'Experiencia gastronómica' },
-  { icon: '🎁', title: 'Merchandising' },
-  { icon: '🧣', title: 'Bufanda del club' },
+  {  title: 'Indumentaria de San Lorenzo' },
+  {  title: 'Entradas para un partido' },
+  {  title: 'Experiencia gastronómica' },
+  {  title: 'Ropa' },
+  {  title: 'Vino' },
+  {  title: 'Perfume' },
+  {  title: 'Transferencia a sd.villegas.mp' },
 ];
 
 const Gif = () => {
-  return (
+return (
     <div className={styles.wrapper}>
       <h3 className={styles.title}>Regalos sugeridos</h3>
       <div className={styles.scrollContainer}>
         {gifts.map((gift, index) => (
           <div key={index} className={styles.card}>
-            <div className={styles.icon}>{gift.icon}</div>
+            <span>{gift.title}</span>
           </div>
         ))}
       </div>

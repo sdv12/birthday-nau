@@ -48,7 +48,7 @@ function App() {
         <div className='quadrant'><Gif /></div>
         <div className='quadrant'><Location /></div>
             <div className='lowerHalfFooter'>
-              © 2025 Una app mas - Hecha con amor
+              © 2025 Una app mas - Hecha con amor (o no)
             </div>
       </div>
     </>
