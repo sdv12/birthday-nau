@@ -21,7 +21,7 @@ const CheckGo = () => {
           className={styles.checkbox}
         />
         <span className={styles.customCheckbox}></span>
-        <span className={styles.labelText}>Sí, voy a ir</span>
+        <span className={styles.labelText}>Sí, voy</span>
       </label>
 
         {isGoing && (
