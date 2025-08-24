@@ -4,7 +4,6 @@ import styles from './Location.module.css';
 const Location = () => {
   return (
     <div className={styles.locationContainer}>
-      <h3 className={styles.title}>¿Dónde es?</h3>
       <div className={styles.mapWrapper}>
         <iframe
           title="Ubicación del evento"

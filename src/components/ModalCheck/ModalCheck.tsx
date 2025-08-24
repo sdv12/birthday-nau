@@ -8,7 +8,7 @@ const ModalCheck = ({ isOpen, onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>¡Gracias por confirmar tu asistencia!</h2>
-        <p>Traer bebida</p>
+        <p>El menu es hamburguesas. Traer bebida</p>
         <p>
           Ante cualquier duda o posible inasistencia, me podés avisar por
           whatsApp o a la Negra. Muchas gracias nuevamente, te espero 🔵🔴

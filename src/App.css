@@ -67,6 +67,9 @@ html, body, #root {
   grid-template-rows: 1fr 1fr;
   gap: 0.5rem;
   padding-bottom: 40px; /* Espacio para el footer */
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
   color: white;
   position: relative;
 
@@ -78,10 +81,48 @@ html, body, #root {
   padding: 5px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.2); /* Borde sutil para separar cuadrantes */
 }
+.topFull {
+  grid-column: span 2;       /* ocupa ambas columnas */
+  display: flex;
+  flex-direction: column;    /* dirección vertical: texto arriba, mapa abajo */
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  text-align: center;
+  max-height: 250px;         /* límite de altura */
+  overflow: hidden;          /* evita que el mapa se desborde */
+}
+
+/* Título y dirección */
+.topFull h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.topFull p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* El mapa ajustado al ancho */
+.topFull iframe {
+  width: 90%;     /* no ocupa todo para dejar márgenes */
+  max-width: 500px;
+  height: 150px;  /* altura fija y controlada */
+  border: none;
+  border-radius: 8px;
+}
+
 
 /* Eliminar el padding del footer */
 /* Footer fijo en la parte inferior */
@@ -102,7 +143,7 @@ html, body, #root {
 
 .doble {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .elegantHeader {

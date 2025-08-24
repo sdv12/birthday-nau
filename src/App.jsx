@@ -2,7 +2,7 @@
 import './App.css'
 import { useState } from 'react';
 import FirstData from './components/FirstData/FirstData'
-import Message from './components/Message'
+
 import MusicChoise from './components/MusicChoise/MusicChoise'
 import CheckGo from './components/CheckGo/CheckGo'
 import Gif from './components/Gif/Gif'
@@ -43,10 +43,13 @@ function App() {
       </div>
 
       <div className='lowerHalf halfScreen'>
-        <div className='quadrant'><Message /></div>
+              <div className='topFull'>
+        <h3>¿Dónde es?</h3>
+        <p>OBISPO SALGUERO 65</p>
+        <Location />
+      </div>
         <div className='quadrant'><MusicChoise /></div>
         <div className='quadrant'><Gif /></div>
-        <div className='quadrant'><Location /></div>
             <div className='lowerHalfFooter'>
               © 2025 Una app mas - Hecha con amor (o no)
             </div>
